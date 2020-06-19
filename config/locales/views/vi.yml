@@ -1,0 +1,24 @@
+vi:
+  admin:
+    books:
+      index:
+        title: Tất cả sách
+        see_all: xem hết
+        edit: Sửa
+        new: Thêm sách
+      new:
+        title: Thêm sách
+      edit:
+        title: Thay đổi thông tin sách
+      show:
+        title: Thông tin sách
+        back: Về danh sách sách
+        edit: Sửa
+      create:
+        success: Đã thêm sách
+        fail: Không thêm sách được
+      update:
+        success: Đã cập nhật sách
+        fail: Không cập nhật sách được
+      form:
+        back: Về danh sách sách

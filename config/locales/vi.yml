@@ -1,0 +1,6 @@
+vi:
+  currency: ₫
+  helpers:
+    submit:
+      create: Tạo %{model}
+      update: Cập nhật %{model}

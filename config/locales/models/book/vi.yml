@@ -1,0 +1,9 @@
+vi:
+  activerecord:
+    models:
+      book: Sách
+    attributes:
+      book:
+        title: Tên
+        description: Giới thiệu
+        price: Giá

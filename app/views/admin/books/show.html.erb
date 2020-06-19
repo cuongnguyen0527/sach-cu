@@ -1,0 +1,17 @@
+<%= render 'shared/flash' %>
+<h1><%= t '.title' %></h1>
+<h2><%= @book.title %></h2>
+<div class="mb-3">
+  <p class="font-bold">
+    <%= Book.human_attribute_name(:description) %>:
+  </p>
+  <p class="whitespace-pre-wrap"><%= @book.description %></p>
+</div>
+<div class="mb-3">
+  <p class="font-bold inline-block">
+    <%= Book.human_attribute_name(:price) %>:
+  </p>
+  <p class="inline-block"><%= money @book.price %></p>
+</div>
+<%= link_to t('.edit'), edit_admin_book_path(@book), class: 'btn' %>
+<%= link_to t('.back'), admin_books_path %>

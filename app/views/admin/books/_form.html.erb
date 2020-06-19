@@ -1,0 +1,20 @@
+<div class="max-w-full">
+  <%= form_with model: ['admin', @book] do |form| %>
+    <div class="mb-3">
+      <%= form.label :title, class: 'block font-bold' %>
+      <%= form.text_field :title, class: 'input' %>
+    </div>
+    <div class="mb-3">
+      <%= form.label :description, class: 'block font-bold' %>
+      <%= form.text_area :description, rows: 12, class: 'w-full input' %>
+    </div>
+    <div class="mb-3">
+      <%= form.label :price, class: 'block font-bold' %>
+      <%= form.number_field :price, class: 'input' %>
+    </div>
+    <div>
+      <%= form.submit class: 'btn btn-primary' %>
+      <%= link_to t('.back'), admin_books_path %>
+    </div>
+  <% end %>
+</div>
